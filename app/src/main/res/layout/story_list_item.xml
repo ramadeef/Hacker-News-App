@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    style="@style/StroyItemLight">
+    <RelativeLayout
+        android:id="@+id/header_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/story_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:minWidth="42dp"
+            android:textSize="24sp"
+            app:typeface="roboto_bold"
+            tools:ignore="RtlHardcoded"
+            tools:text="24"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/story_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/story_points"
+            android:textSize="18sp"
+            app:typeface="roboto_medium"
+            tools:ignore="RtlHardcoded"
+            tools:text="Hello Header"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/story_submitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_title"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/story_points"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp"
+            app:typeface="roboto_light"
+            tools:ignore="RtlHardcoded"
+            tools:text="iwhdwdh"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/story_domain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_title"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/story_submitter"
+            android:maxLines="1"
+            android:textSize="14sp"
+            app:typeface="roboto_light"
+            tools:ignore="RtlHardcoded"
+            tools:text="blah blah blah blah blah blah blah"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/story_long_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_submitter"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/story_points"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="14sp"
+            app:typeface="roboto_light"
+            tools:ignore="RtlHardcoded"
+            tools:text="14 hours ago"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story_long_ago"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/story_points"
+            app:typeface="roboto_light"
+            tools:ignore="RtlHardcoded"/>
+    </RelativeLayout>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/job_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_base"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:typeface="roboto_regular"/>
+
+</RelativeLayout>
